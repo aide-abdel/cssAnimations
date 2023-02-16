@@ -1,0 +1,88 @@
+.animations{
+    margin-left: 20%;
+    /* margin-right: 10%; */
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 40% 40%;
+}
+.text1{
+    border: solid black;
+}
+.text2{
+    border: solid black;
+}
+.text3{
+    border: solid black;
+}
+.text4{
+    border: solid black;
+}
+.text5{
+    border: solid black;
+}
+.text6{
+    border: solid black;
+}
+
+.box1{
+    width: 80px;
+    height: 80px;
+    border: solid red;
+    background-color: red;
+    animation: sizeup 2s linear infinite;
+}
+@keyframes sizeup {
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+.box2{
+    width: 80px;
+    height: 80px;
+    border: solid yellow;
+    background-color: yellow;
+   animation: bounce 3s linear infinite
+}
+@keyframes bounce{
+  
+    50%{
+       
+        transform: translate(190%,120%);
+    }
+    100%{
+       
+        transform: translateX(400%);
+    }
+}
+.box3{
+    width: 80px;
+    height: 80px;
+    border: solid green;
+    background-color: green;
+    margin-left: 40%;
+    margin-top: 10%;
+    animation: rotate 1s linear infinite;
+}
+.box4{
+    width: 80px;
+    height: 80px;
+    border: solid blue;
+    background-color: blue;
+    margin-left: 40%;
+    margin-top: 10%;
+    animation: newAnimation 1s linear infinite;
+}
+@keyframes rotate{
+    
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes newAnimation {
+    100%{
+        transform:rotateX(180deg)
+    }
+}
